@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>猜数字游戏</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="app">
+      <h1>猜数字（1-100）</h1>
+      <p class="desc">电脑已生成一个数字。最多 5 次机会，只会告诉你大了或小了。</p>
+
+      <div class="input-row">
+        <input id="guessInput" type="number" min="1" max="100" placeholder="输入 1-100 的整数">
+        <button id="guessBtn" class="btn">猜</button>
+      </div>
+
+      <div class="status">
+        <div id="feedback" class="feedback">开始吧！</div>
+        <div class="attempts">
+          <span>剩余次数：</span><span id="leftCount">5</span>
+        </div>
+        <div class="progress">
+          <div id="progressBar" class="bar" style="width:0%"></div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="restartBtn" class="btn ghost" disabled>重来</button>
+      </div>
+    </div>
+
+    <div id="overlay" class="overlay hidden">
+      <div id="overlayContent" class="overlay-content"></div>
+    </div>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
