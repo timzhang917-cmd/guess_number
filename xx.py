@@ -1,4 +1,8 @@
 a=2
-print(a)
+b=3
 
-print('hello')
+def call():
+    if a>0:
+        return "good"
+    
+print(call())
