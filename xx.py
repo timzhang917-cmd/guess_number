@@ -6,3 +6,4 @@ def call():
         return "good"
     
 print(call())
+print('2.25 update')
